@@ -1,0 +1,20 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "tsconfig": "tsconfig.lib.json",
+  "defaultCategory": "其他",
+  "categoryOrder": ["*"],
+  "sort": "source-order",
+  "hideGenerator": true,
+  "plugin": ["typedoc-theme-category"],
+  "theme": "category",
+  "categorizeByGroup": false,
+  "out": "release/apidoc",
+  "name": "Web IM Kit",
+  "readme": "scripts/assets/README_4_APIDOC.md",
+  "includeVersion": true,
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "treatWarningsAsErrors": true,
+  "intentionallyNotExported": ["EventDefined"]
+}

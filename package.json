@@ -1,0 +1,59 @@
+{
+  "name": "@rongcloud/im-kit",
+  "private": true,
+  "description": "RongCloud Web IMKit — Vue 3 即时通讯 UI 组件库",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/rongcloud/web-imkit-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rongcloud/web-imkit-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rongcloud/web-imkit-sdk/issues"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "scripts": {
+    "typecheck": "vue-tsc -p tsconfig.lib.json --noEmit",
+    "lint": "npm run typecheck && eslint --ext .js,.ts,.vue src scripts vite.config.ts",
+    "build": "npm run typecheck && vite build",
+    "release": "MODE=production npm run build",
+    "build:apidoc": "typedoc"
+  },
+  "version": "5.48.0",
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
+  "dependencies": {
+    "@rongcloud/engine": "~5.48.0",
+    "@rongcloud/imlib-next": "~5.48.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@types/lodash": "4.14.191",
+    "@types/node": "~18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "rollup": "^2.35.1",
+    "rollup-plugin-dts": "^2.0.1",
+    "sass": "^1.59.3",
+    "typedoc": "^0.22.18",
+    "typedoc-theme-category": "^1.0.7",
+    "typescript": "~4.6.2",
+    "vite": "^4.1.4",
+    "vue": "^3.2.47",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^1.2.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/lodash": "4.14.191"
+    }
+  }
+}

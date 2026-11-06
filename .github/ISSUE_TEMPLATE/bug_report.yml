@@ -1,0 +1,55 @@
+name: 问题反馈
+description: 反馈 RongCloud Web IMKit 中可复现的问题
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请提供问题描述和复现步骤，并移除附件及示例中的 Token、密钥和用户隐私数据。安全漏洞请通过 support@rongcloud.cn 私下报告。
+  - type: input
+    id: version
+    attributes:
+      label: IMKit 版本
+      placeholder: 例如 5.48.0
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际表现
+      description: 描述遇到的问题及其影响。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 列出可以复现问题的操作步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期表现
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 请提供浏览器、操作系统、宿主框架以及 Engine、IMLib 的版本。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志
+      description: 可提供日志、错误堆栈或截图。
+      render: text
+  - type: textarea
+    id: minimal_reproduction
+    attributes:
+      label: 最小复现示例
+      description: 可提供最小代码片段或可复现项目链接。

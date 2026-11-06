@@ -1,0 +1,26 @@
+{
+  "name": "@rongcloud/im-kit",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.esm.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.cjs"
+  },
+  "keywords": [
+    "RongCloud",
+    "Web IM Kit",
+    "IM"
+  ],
+  "contributors": ["support@rongcloud.cn"],
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "license": "Apache-2.0",
+  "description": "@rongcloud/im-kit",
+  "homepage": "https://www.rongcloud.cn"
+}

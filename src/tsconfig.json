@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@lib/*": ["./*"],
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.js",
+    "./**/*.ce.vue",
+  ],
+  "extends": "../tsconfig.json",
+}

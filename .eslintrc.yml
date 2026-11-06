@@ -1,0 +1,62 @@
+env:
+  commonjs: true
+  es2020: true
+  browser: true
+extends:
+  - airbnb-base
+root: true
+globals:
+  # 编译变量
+  __COMMIT_ID__: true
+  __VERSION__: true
+  __REQUIRED_ENGINE_VERSION__: true
+  __DEV__: true
+  __IS_ENTERPRISE__: true
+parser: 'vue-eslint-parser'
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  ecmaVersion: 11
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+rules: {
+  import/no-import-module-exports: 'error',
+  no-useless-return: 'warn',
+
+  # 以下规则已确定关闭
+  no-useless-constructor: 0,
+  prefer-const: 'off',
+  no-use-before-define: 'off',
+  no-underscore-dangle: 'off',
+  no-plusplus: 'off',
+  no-continue: 'off',
+  import/no-unresolved: 'off',
+  import/extensions: 'off',
+  import/prefer-default-export: 'off',
+  multiline-ternary: ["error", "always-multiline"],
+  class-methods-use-this: 'off',
+  max-classes-per-file: 'off',
+  default-case: 'off',
+  no-multi-assign: 'off',
+  no-bitwise: 'off',  # rmtp 协议操作有频繁的位运算，IM 需要关闭该规则
+  import/no-extraneous-dependencies: 'off', # 项目需求出发，需要关闭该规则
+
+  # 逐步开启
+  no-empty-function: ["off", { allow: ["constructors"] }],
+  no-constructor-return: 'off',
+  no-unsafe-optional-chaining: 'off',
+  default-param-last: 'off',
+  no-mixed-operators: 'off',
+  no-restricted-globals: 'off',
+  no-shadow: 'off',
+  no-param-reassign: 'off',
+  no-await-in-loop: 'off',
+  no-restricted-syntax: 'off',
+  guard-for-in: 'off',
+  consistent-return: 'off',
+  max-len: 'off',
+  func-names: 'off',
+  no-console: 'off',
+  prefer-promise-reject-errors: 0,
+  no-unused-vars: 0,
+}
